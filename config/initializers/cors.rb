@@ -7,8 +7,8 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    # origins 'https://fixer-tube.herokuapp.com/'
-    origins '*'
+    origins 'https://fixer-tube.herokuapp.com'
+    # origins '*'
 
     resource '*',
       headers: :any, methods: [:get, :post, :put, :patch, :delete]
